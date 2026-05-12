@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Shiv Shankar || Personal Portfolio</title>
+</head>
+<body>
+    <header class="header">
+            <h2></h2>
+            <ul>
+                <a href="#Home.html">Home</a>
+                <a href="#About.html">About</a>
+                <a href="#Skills.html">Skills</a>
+                <a href="#Projects.html">Projects</a>
+                <a href="#Contact.html">Contact</a>
+            </ul>
+        </header>
+    <div class="container">
+        <div class="sec-container" id="Home.html">
+            <div class="name">
+                <h1>Hi, I am <span style="color: red;">Shiv Shankar</span></h1>
+                <h2></h2>
+                <p>I create modern, responsive and beautiful websites using HTML, CSS and JavaScript.</p>
+                <button>Download CV</button>
+                <button>View Projects</button>
+            </div>
+            <div class="img">
+                <img class="image" src="shiv.jpg" alt="" height="250px" width="250px">
+                <div class="social">
+                    <span style="background-color: white;"><a href=""><img src="github.png" alt="" height="40px" width="40px"></a></span>
+                    <span style="background-color: white;"><a href=""><img src="message.png" alt="" height="40px" width="40px" style="border-radius: 50%;"></a></span>
+                    <span style="background-color: white;"><a href=""><img src="instagram.png" alt="" height="40px" width="40px"></a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="about" id="About.html">
+            <h1>About Me</h1>
+            <p> I am a Computer Science student with interest in web development and software
+                development. I have knowledge of HTML, CSS, JavaScript, Python, and Kivy. 
+                I enjoy creating projects, learning new technologies, and improving my programming 
+                skills every day.
+            </p>
+        </div>
+
+        <div class="skills" id="Skills.html">
+            <h1>My SkillS</h1>
+            <div id="skills-box">
+                <span id="skills"><img src="html.png" alt="" height="50px" width="60px"><h3>HTML</h3></span>
+                <span id="skills"><img src="css.png" alt="" height="50px" width="60px"><h3>CSS</h3></span>
+                <span id="skills"><img src="java-script.png" alt="" height="50px" width="60px"><h3>JavaScript</h3></span>
+                <span id="skills"><img src="php.png" alt="" height="50px" width="60px"><h3>PHP</h3></span>
+                <span id="skills"><img src="mysql.png" alt="" height="50px" width="60px"><h3>MySQL</h3></span>
+                <span id="skills"><img src="python.png" alt="" height="50px" width="60px"><h3>Python</h3></span>
+                <span id="skills"><img src="word.png" alt="" height="50px" width="60px"><h3>MS Word</h3></span>
+                <span id="skills"><img src="logo.png" alt="" height="50px" width="60px"><h3>Excel</h3></span>
+                <span id="skills"><img src="powerpoint.png" alt="" height="50px" width="60px"><h3>Power Point</h3></span>
+            </div>
+        </div>
+
+        <div class="project" id="Projects.html">
+            <h1>Projects</h1>
+            <div>
+                <span><img src="image.png" alt="" height="200px" width="300px"><h3>Personal Portfolio </h3><p>Modern responsive personal portfolio website Using HTML CSS and JavaScript....</p><button>View Website</button></span>
+                <span><img src="image.png" alt="" height="200px" width="300px"><h3>Attendance Management System</h3><p>Modern responsive personal portfolio website Using HTML CSS and JavaScript....</p><button>View Website</button></span>
+                <span><img src="image.png" alt="" height="200px" width="300px"><h3>E-Commerce</h3><p>Modern responsive personal portfolio website Using HTML CSS and JavaScript....</p><button>View Website</button></span>
+            </div>
+        </div>
+
+        <div class="contact" id="Contact.html">
+            <h1>Contact</h1>
+            <div id="contact">
+                <input type="text" name="" id="" placeholder="Enter Your name">
+                <input type="email" name="" id="" placeholder="Enter Mail">
+                <textarea name="" id="" placeholder="Drop Your Message..."></textarea>
+                <button>Send Message</button>
+            </div>
+        </div>
+        
+    </div> <!--end container div-->
+
+
+    <script>
+
+    // Typing Effect
+
+    const text = "Full Stack Web Developer";
+    const text1 = "Shiv Shankar";
+    let index = 0;
+    let index1 = 0;
+
+    function typeEffect() {
+
+      document.querySelector(".name h2").innerHTML =
+        text.slice(0, index);
+
+      index++;
+
+      if(index > text.length){
+        index = 0;
+      }
+    }
+
+    function typeEffect1() {
+
+      document.querySelector(".header h2").innerHTML =
+        text1.slice(0, index1);
+
+      index1++;
+
+      if(index1 > text1.length){
+        index1 = 0;
+      }
+    }
+
+    setInterval(typeEffect, 200);
+    setInterval(typeEffect1, 300);
+
+  </script>
+</body>
+</html>
