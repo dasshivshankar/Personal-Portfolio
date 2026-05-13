@@ -274,8 +274,7 @@ header ul a {
 
 @media (max-width: 768px){
 
-    header{
-        height: auto;
+    header{ 
         flex-direction: column;
         padding: 15px 0;
     }
